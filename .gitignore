@@ -1,0 +1,8 @@
+node_modules/
+.ai-handoff/
+.env
+.env.*
+test-results/
+.DS_Store
+__pycache__/
+*.log

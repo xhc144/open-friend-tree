@@ -1,0 +1,11 @@
+{
+  "name": "open-friend-tree",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "无广告、可部署到 GitHub Pages 的圣诞树好友默契问答",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test tests/lib.test.mjs tests/security.test.mjs"
+  }
+}

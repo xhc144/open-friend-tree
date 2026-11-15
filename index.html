@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#153f36" />
+    <meta
+      name="description"
+      content="种一棵属于你的圣诞树，邀请朋友回答关于你的问题，把默契挂在树上。免费、开源、无广告。"
+    />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; font-src 'self'; media-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'"
+    />
+    <title>OpenTree · 树上的朋友</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">跳到主要内容</a>
+    <header class="site-header">
+      <a href="#" class="brand" aria-label="OpenTree 树上的朋友，首页"
+        ><img src="./assets/favicon.svg" width="34" height="34" alt="" /><span
+          >树上的朋友<small>OPENTREE</small></span
+        ></a
+      >
+      <nav aria-label="主导航">
+        <a href="#my">我的树</a
+        ><button
+          class="sound-toggle"
+          type="button"
+          aria-label="开启提示音"
+          aria-pressed="false"
+          title="开启提示音"
+        >
+          ♫<span>声音关</span></button
+        ><a
+          href="https://github.com/xhc144/open-friend-tree"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="source-link"
+          >开源 ↗</a
+        >
+      </nav>
+    </header>
+    <main id="content" tabindex="-1"></main>
+    <footer class="site-footer">
+      <a href="#">OpenTree · 树上的朋友</a
+      ><span>把默契挂上树，把祝福留给你。</span><a href="#about">使用说明</a>
+    </footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <dialog id="copy-dialog">
+      <form method="dialog">
+        <button class="dialog-close" aria-label="关闭">×</button>
+        <h2>复制链接</h2>
+        <p>长按或全选下方链接，复制后发给朋友。</p>
+        <textarea
+          id="copy-fallback"
+          readonly
+          aria-label="需要复制的链接"
+          rows="5"
+        ></textarea
+        ><button class="button primary">完成</button>
+      </form>
+    </dialog>
+  </body>
+</html>
